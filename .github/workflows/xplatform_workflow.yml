@@ -28,7 +28,7 @@ on:
             - iPhone 8
             - iPhone 12 Pro
             - iPhone 14 Pro
-         default: iphone 8
+         default: iPhone 8
         
 
 permissions:
@@ -38,7 +38,7 @@ permissions:
 
 env:
   IPHONE_MODEL: ${{ inputs.IOS_simulator }} 
-  IOS_VERSION: 16.2
+  IOS_VERSION: 17.0
   API_LEVEL: 33
   EMULATOR_NAME: Nexus
   EMULATOR_DEVICE: ${{ inputs.android_emulator }} 
