@@ -16,7 +16,6 @@ export const config: Options.Testrunner = {
     waitforTimeout: 25000,
     connectionRetryTimeout: 350000,
     connectionRetryCount: 2,
-    wait: 7000,
     interval: 200, 
 
     framework: 'mocha',
