@@ -22,7 +22,7 @@ on:
          default: Nexus 5
       IOS_simulator:
          type: choice
-         description: Select an Iphone device 
+         description: Select an iphone device 
          required: true
          options: 
             - iPhone 8
@@ -38,7 +38,7 @@ permissions:
 
 env:
   IPHONE_MODEL: ${{ inputs.IOS_simulator }} 
-  IOS_VERSION: 17.0
+  IOS_VERSION: 17.2
   API_LEVEL: 33
   EMULATOR_NAME: Nexus
   EMULATOR_DEVICE: ${{ inputs.android_emulator }} 
