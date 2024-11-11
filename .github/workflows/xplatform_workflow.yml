@@ -69,7 +69,11 @@ jobs:
           export IOS_VERSION=$IOS_VERSION
      
       - name: check simulator list
-        run: xcrun simctl list
+        run: |
+          xcrun simctl shutdown all
+          killall -9 com.apple.CoreSimulator.CoreSimulatorService
+          xcrun simctl list
+          xcrun simctl list runtimes
      
       - name: Start simulator
         run: |
